@@ -1,5 +1,6 @@
 require "cooking_spoon/version"
 require "cooking_spoon/unit"
+require "cooking_spoon/config"
 
 module CookingSpoon
   class << self
@@ -18,9 +19,14 @@ module CookingSpoon
       end
     end
 
+    def quantity(quantity)
+      "#{spoon_format(quantity)}"
+    end
+
     private
     
     def spoon_format(quantity)
+      quantity = Rational(quantity)
       if quantity - quantity.floor > 0
         if quantity < 1
           "#{Rational(quantity)}"
