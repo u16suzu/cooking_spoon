@@ -6,7 +6,7 @@ require 'cooking_spoon/version'
 Gem::Specification.new do |spec|
   spec.name          = "cooking_spoon"
   spec.version       = CookingSpoon::VERSION
-  spec.authors       = ["Yuichiro Suzuki"]
+  spec.authors       = ["u16suzu"]
   spec.email         = ["u16suzu@gmail.com"]
 
   spec.summary       = %q{cooking_spoon gem is usefull for showing cooking spoon unit in recipe.}
