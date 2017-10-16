@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{cooking_spoon gem is usefull for showing cooking spoon unit in recipe.}
   spec.description   = %q{cooking_spoon gem create string from Rational number.}
-  spec.homepage      = "http://u16suzu.hatenablog.com/"
+  spec.homepage      = "https://github.com/u16suzu/cooking_spoon"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
