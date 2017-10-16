@@ -24,15 +24,15 @@ Or install it yourself as:
 
 ```ruby
 # Float
-CookingSpoon::quantity_and_unit(1.5, unit) # => "小さじ1と1/2"
+CookingSpoon::quantity_and_unit(1.5, :big_spoon) # => "大さじ1と1/2"
 
 # String
-CookingSpoon::quantity_and_unit("5/2", unit) # => "小さじ2と1/2"
+CookingSpoon::quantity_and_unit("5/2", :small_spoon) # => "小さじ2と1/2"
 
 # Rational
-CookingSpoon::quantity_and_unit(Rational(1, 2) # => "小さじ1/2"
-CookingSpoon::quantity_and_unit(Rational(3, 2) # => "小さじ1と1/2"
-CookingSpoon::quantity_and_unit(Rational(5, 2) # => "小さじ2と1/2"
+CookingSpoon::quantity_and_unit(Rational(1, 2), :small_spoon) # => "小さじ1/2"
+CookingSpoon::quantity_and_unit(Rational(3, 2), :small_spoon) # => "小さじ1と1/2"
+CookingSpoon::quantity_and_unit(Rational(5, 2), :small_spoon) # => "小さじ2と1/2"
 ```
 
 ## Development
